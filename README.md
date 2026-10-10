@@ -22,8 +22,7 @@ Python, Streamlit, Pillow, rembg (модель u2netp, працює локаль
 
 Під час першого запуску rembg завантажить невелику модель (~4 МБ) — потрібен інтернет.
 
-<img width="632" height="876" alt="image" src="https://github.com/user-attachments/assets/4d814c7a-61cf-4876-975d-5d17d8397c76" />
-<img width="337" height="704" alt="image" src="https://github.com/user-attachments/assets/8efb8a6f-710e-4e1d-9c40-54d9a6a0731b" />
+<img width="813" height="766" alt="image" src="https://github.com/user-attachments/assets/8c2e222f-7186-431f-b076-9cf8bbdf3a29" />
 
 
 ## Автор
