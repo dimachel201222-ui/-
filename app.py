@@ -26,7 +26,6 @@ if uploaded is not None:
 
 if st.button("✨ Прибрати фон"):
     if uploaded is None:
-        # Мінімальна перевірка вводу: без фото функцію не викликаємо.
         st.warning("Спочатку завантаж фото речі.")
     else:
         with st.spinner("AI вирізає предмет з фону…"):
@@ -40,3 +39,4 @@ if st.button("✨ Прибрати фон"):
             file_name="chyste_foto.png",
             mime="image/png",
         )
+
