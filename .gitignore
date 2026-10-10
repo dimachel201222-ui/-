@@ -1,0 +1,17 @@
+# секрети
+.env
+.streamlit/secrets.toml
+
+# службові файли Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# локальні дані застосунку
+*_history.json
+
+# службові файли редактора й системи
+.vscode/
+.idea/
+.DS_Store
