@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap&subset=cyrillic');
+
+html, body, .stApp, .stApp p, .stApp div, .stApp span, .stApp label, .stApp button, .stApp input {
+  font-family: 'Inter', sans-serif;
+}
+[data-testid="stIconMaterial"], .material-symbols-rounded, [class*="material-symbols"] {
+  font-family: 'Material Symbols Rounded' !important;
+}
+.stApp { background: #f6f8f5; }
+header[data-testid="stHeader"], [data-testid="stToolbar"], #MainMenu, footer { display: none !important; }
+
+.block-container {
+  max-width: 1120px !important;
+  padding: 0 24px 0 24px !important;
+}
+.stMain, [data-testid="stMainBlockContainer"] { padding-top: 0 !important; }
+[data-testid="stMainBlockContainer"] > [data-testid="stVerticalBlock"] { gap: 32px; }
+
+.app-header {
+  background: #fff; border-bottom: 1px solid #e1e8e2;
+  margin: 0 calc(50% - 50vw); width: 100vw;
+  height: 88px; display: flex; align-items: center; justify-content: space-between;
+  padding: 0 64px; box-sizing: border-box;
+}
+.identity { display: flex; align-items: center; gap: 14px; }
+.brand-mark {
+  width: 40px; height: 40px; border-radius: 12px; background: #267a50;
+  display: flex; align-items: center; justify-content: center;
+}
+.product-name { font-size: 24px; color: #202c25; }
+.divider-v { width: 1px; height: 22px; background: #e1e8e2; }
+.muted { color: #718078; }
+.product-desc { font-size: 13px; color: #718078; }
+.help { display: flex; align-items: center; gap: 8px; font-size: 13px; color: #718078; }
+.header-gap { height: 40px; }
+
+.workflow { display: flex; align-items: center; gap: 24px; }
+.step { display: flex; align-items: center; gap: 10px; font-size: 13px; color: #718078; }
+.step .marker {
+  width: 28px; height: 28px; border-radius: 100px; background: #e8ede9; color: #718078;
+  display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 600;
+}
+.step.done .marker, .step.active .marker { background: #267a50; color: #fff; }
+.step.done, .step.active { color: #202c25; }
+.step .connector { width: 52px; height: 1px; background: #e1e8e2; }
+
+.page-title { font-size: 38px !important; line-height: 1.2; color: #202c25; margin: 0; padding: 0 !important; font-weight: 400 !important; letter-spacing: normal; display: flex; align-items: center; justify-content: space-between; }
+.page-subtitle { font-size: 16px; line-height: 1.5; color: #718078; margin: 12px 0 0 0; }
+.badge {
+  display: inline-flex; align-items: center; gap: 7px; background: #ecf5ee; color: #267a50;
+  border-radius: 100px; padding: 7px 12px; font-size: 12px; font-weight: 600;
+}
+
+[class*="st-key-card"] {
+  background: #fff; border: 1px solid #e1e8e2; border-radius: 20px; padding: 24px;
+}
+.card-title { font-size: 14px; font-weight: 600; color: #202c25; }
+.card-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+.small { font-size: 12px; color: #718078; }
+.accent { color: #267a50; }
+
+[data-testid="stFileUploader"] section {
+  background: #ecf5ee; border: 1.5px dashed #a9cbb3; border-radius: 12px;
+  min-height: 300px; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 16px; padding: 24px; text-align: center;
+}
+[data-testid="stFileUploaderDropzoneInstructions"] { display: block !important; text-align: center; order: 0; }
+[data-testid="stFileUploaderDropzoneInstructions"] > div { display: none; }
+[data-testid="stFileUploaderDropzoneInstructions"]::before {
+  content: "Перетягни фото сюди"; display: block; font-size: 22px; font-weight: 600; color: #202c25;
+}
+[data-testid="stFileUploaderDropzoneInstructions"]::after {
+  content: "або вибери його на своєму пристрої · JPG або PNG · одне фото за раз";
+  display: block; font-size: 14px; color: #718078; margin-top: 8px;
+}
+[data-testid="stFileUploader"] section [data-testid="stBaseButton-secondary"] {
+  background: #267a50; color: #fff; border: none; border-radius: 12px; height: 50px; padding: 0 22px;
+  font-size: 0; font-weight: 600;
+}
+[data-testid="stFileUploader"] section [data-testid="stBaseButton-secondary"] { order: 1; }
+[data-testid="stFileUploader"] section [data-testid="stBaseButton-secondary"] * { display: none !important; }
+[data-testid="stFileUploader"] section [data-testid="stBaseButton-secondary"]::after { content: "Вибрати фото"; font-size: 15px; color: #fff; }
+[data-testid="stFileUploader"] label { display: none; }
+[data-testid="stFileUploaderFile"] { background: #fff; border-radius: 12px; }
+
+.stButton > button, .stDownloadButton > button {
+  height: 50px; border-radius: 12px; padding: 0 22px; font-size: 15px; font-weight: 600;
+  border: 1px solid #e1e8e2; background: #fff; color: #202c25;
+}
+.stButton > button[kind="primary"], .stDownloadButton > button[kind="primary"] {
+  background: #267a50; border-color: #267a50; color: #fff;
+}
+.stButton > button[kind="primary"]:hover, .stDownloadButton > button[kind="primary"]:hover { background: #1f6643; border-color: #1f6643; color: #fff; }
+.stButton > button[kind="secondary"].muted-btn, .st-key-go_empty button { background: #e8ede9; color: #7d8c82; border-color: #e8ede9; }
+
+.hint { display: flex; align-items: center; gap: 8px; font-size: 13px; color: #718078; }
+.tool-symbol { width: 48px; height: 48px; border-radius: 12px; background: #ecf5ee; display: flex; align-items: center; justify-content: center; }
+.panel-title { font-size: 22px; font-weight: 600; color: #202c25; margin: 12px 0 12px; }
+.panel-text { font-size: 14px; line-height: 1.6; color: #718078; }
+.guide-title { font-size: 18px; font-weight: 600; color: #202c25; margin-bottom: 12px; }
+.advice { font-size: 15px; line-height: 1.65; color: #718078; padding-bottom: 20px; border-bottom: 1px solid #e1e8e2; margin-bottom: 20px; }
+.guide-h { font-size: 14px; font-weight: 600; margin-bottom: 14px; }
+.guide-item { display: flex; gap: 12px; margin-bottom: 18px; }
+.guide-item .t { font-size: 13px; font-weight: 600; color: #202c25; }
+.guide-item .d { font-size: 12px; line-height: 1.5; color: #718078; margin-top: 4px; }
+.guide-ico { width: 20px; height: 20px; border-radius: 6px; background: #ecf5ee; color: #267a50; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 600; flex: none; }
+
+.status-box { background: #ecf5ee; border-radius: 12px; padding: 20px; }
+.status-msg { font-size: 16px; font-weight: 600; color: #267a50; margin: 12px 0 8px; }
+.progress { height: 4px; border-radius: 100px; background: #d7e7da; margin-top: 16px; overflow: hidden; }
+.progress > span { display: block; width: 35%; height: 100%; background: #267a50; border-radius: 100px; animation: slide 1.4s ease-in-out infinite; }
+@keyframes slide { 0% { margin-left: -35%; } 100% { margin-left: 100%; } }
+.spin { width: 28px; height: 28px; border: 3px solid #d7e7da; border-top-color: #267a50; border-radius: 50%; animation: rot 0.9s linear infinite; }
+@keyframes rot { to { transform: rotate(360deg); } }
+
+.file-info { display: flex; align-items: center; gap: 12px; margin-top: 14px; }
+.file-symbol { width: 36px; height: 36px; border-radius: 8px; background: #f6f8f5; display: flex; align-items: center; justify-content: center; }
+.file-symbol.big { width: 48px; height: 48px; background: #ecf5ee; }
+.file-name { font-size: 13px; font-weight: 600; color: #202c25; }
+.file-meta { font-size: 11px; color: #718078; margin-top: 3px; }
+.dl-name { font-size: 16px; font-weight: 600; color: #202c25; }
+.dl-meta { font-size: 12px; color: #718078; margin-top: 6px; }
+
+[data-testid="stImage"] img { border-radius: 12px; }
+.white-frame [data-testid="stImage"] img { border: 1px solid #e1e8e2; }
+
+[data-testid="stAlert"] { border-radius: 12px; }
+[data-testid="stAlertContainer"] { border-radius: 12px; }
+
+/* ---- Підвал ---- */
+.app-footer { display: flex; justify-content: space-between; font-size: 12px; color: #718078; padding: 28px 0; }
+
+[data-testid="stElementContainer"]:has(> [data-testid="stMarkdown"] style),
+[data-testid="stElementContainer"]:has(style) { display: none; }
+[data-testid="stFileUploader"] section { flex-direction: column-reverse !important; }
+[data-testid="stFileUploader"] section > div { flex: none !important; width: auto; }
+[data-testid="stFileUploader"] section { justify-content: center !important; gap: 20px !important; }
