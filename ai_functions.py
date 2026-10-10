@@ -11,7 +11,6 @@ import io
 from PIL import Image
 from rembg import new_session, remove
 
-
 _session = None
 
 
